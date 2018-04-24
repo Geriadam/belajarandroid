@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:orientation="vertical"
+    tools:context="com.geriadam.myflexiblefragment.OptionDialogFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Apa Makanan Favorit mu ? "
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+    <RadioGroup
+        android:id="@+id/rg_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/rb_bakso"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Bakso"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+        <RadioButton
+            android:id="@+id/rb_nasigoreng"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Goreng"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+        <RadioButton
+            android:id="@+id/rb_miayam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mie Ayama"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+        <RadioButton
+            android:id="@+id/rb_pecel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nasi Pecel"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"/>
+    </RadioGroup>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Tutup"
+            android:layout_marginRight="4dp"/>
+        <Button
+            android:id="@+id/btn_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Pilih"
+            android:layout_marginRight="4dp"/>
+    </LinearLayout>
+</LinearLayout>
